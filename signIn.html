@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body{
+            background-image:url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_960_720.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        #signInBox{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            width: 500px;
+            height: 500px;
+            background-color: #f7f7f7;
+            margin: auto;
+            margin-top: 150px;
+            border-radius: 5px;
+            /* text-align: center; */
+            padding: 10px 0px 10px 20px;
+            box-sizing: border-box;
+        }
+        #logo{
+            width: 55%;
+            text-align: center;
+            align-content: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        fieldset{
+            border: none;
+            display: block
+        }
+        #email{
+            display: block;
+            width: 90%;
+            height: 50px;
+            padding-left: 10px;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;   
+        }
+        #password{
+            display: block;
+            width: 90%;
+            height: 50px;
+            padding-left: 10px;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 20px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #submit{
+            display: block;
+            width: 93%;
+            height: 50px;
+            padding-left: 10px;
+            background-color: #d5846f;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .labels{
+            margin: 50px 0px 0px 0px;
+            padding: 0px;
+            color: #868686;
+        }
+        p{
+            color: #868686;
+            font-size: 20px;
+        }
+        #signInBox>div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="signInBox">
+        <div>
+            <img src="https://accounts.coschedule.com/img/cos-logo-horz.svg" alt="logo"  id="logo">
+        </div>
+
+        <form>
+            <fieldset>
+                <label class="labels">EMAIL ADDRESS</label>
+                <input type="email" id="email" placeholder="Email Address">
+                <label class="labels">PASSWORD</label>
+                <input type="password" id="password" placeholder="Password">
+                <input type="submit" id="submit" value="Sign In">
+            </fieldset>
+        </form>
+
+        <div>
+            <p>Need an account? | Forgot your password?</p>
+        </div>
+        
+    </div>
+</body>
+</html>
