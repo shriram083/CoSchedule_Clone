@@ -5,8 +5,302 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        body{
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        #heading{
+            font-size: 40px;
+            color: #4b4b4b;
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 0px;
+        }
+        #subtitle{
+            color: #4b4b4b;
+            font-size: 20px;
+            margin-top: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+        #signUpBox{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            width: 600px;
+            height: auto;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 10px 20px 10px 20px;
+            /* box-sizing: border-box; */
+            text-align: left;
+            background-color: white;
+        }
+        fieldset{
+            display: block;
+            border: none;
+        }
+        .innerBox{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            background-color: white;
+            padding: 0px;
+            /* box-sizing: border-box; */
+            margin-top: 5px;
+            padding: 10px 10px 5px 10px;
+        }
+        .inputDeco{
+            width: 90%;
+            height: auto;
+            border-radius: 3px;
+            margin-top: 10px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            border: none;
+            margin: 0px;
+        }
+        i{
+            color: #ff9191;
+            height: 30px;
+            width: 30px;
+        }
+        .innerLabels{
+            color: #868686;
+        }
+        .instructions{
+            background-color: #ffe3e3;
+            border: 1px solid #ff9191;
+            color: #f16666;
+            padding: 7px 15px 7px 15px;
+            margin-top: 8px;
+        }
+        #buttonBox{
+            text-align: right;
+            margin-top: 10px;
+        }
+        #signUp{
+            height: 50px;
+            width: 200px;
+            background-color: #f9bfae;
+            color: white;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+        #desclaimer{
+            color: #868686;
+            margin: 10px 20px 10px 20px;
+            font-size: 14px;
+        }
+
+        @media all and (min-width: 80px) and (max-width: 600px) {
+            .inputDeco{
+                width: 80%;
+                height: auto;
+            }
+            #signUpBox{
+                width: auto;
+                height: auto;
+            }
+            #innerbox{
+                width: auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Sign Up Page</h1>
+    
+    <h1 id="heading">Create My Marketing Calendar</h1>
+    <p id="subtitle">Free for life. No credit card required.</p>
+    <div id="signUpBox">
+        <form>
+            <fieldset>
+                <label class="innerLabels">Full Name</label>
+                <div class="innerBox">
+                    <input type="text" placeholder="Full Name" id="userName" class="inputDeco">
+                    <span><i id="nameSpan" class="fa-solid fa-square-xmark"></i></span>
+                </div>
+                <div id="nameInstruction">
+                    <p class="instructions" >Please enter your full name.</p>
+                </div>
+                
+                <label class="innerLabels">Email Address</label>
+                <div class="innerBox">
+                    <input type="email" placeholder="Work Email Address" id="userEmail" class="inputDeco">
+                    <span><i id="emailSpan" class="fa-solid fa-square-xmark"></i></span>
+                </div>
+                <div id="emailInstruction">
+                    <p class="instructions">Please enter a valid email address.</p>
+                </div>
+                
+                <label class="innerLabels">Company</label>
+                <div class="innerBox">
+                    <input type="text" placeholder="Company Name" id="userCompany" class="inputDeco">
+                    <span><i id="companySpan" class="fa-solid fa-square-xmark"></i></span>
+                </div>
+                <div id="companyInstruction">
+                    <p class="instructions">Please enter your Company name.</p>
+                </div>
+                
+                <label class="innerLabels">Website URL</label>
+                <div class="innerBox">
+                    <input type="text" placeholder="Company Website URL" id="userWebsite" class="inputDeco">
+                    <span><i id="websiteSpan" class="fa-solid fa-square-xmark"></i></span>
+                </div>
+                <div id="websiteInstruction">
+                    <p class="instructions">Please enter a valid website URL.</p>
+                </div>
+
+                <label class="innerLabels">Password</label>
+                <div class="innerBox">
+                    <input type="password" placeholder="Password (minimum 8 character)" id="userPassword" class="inputDeco">
+                    <span><i id="passwordSpan" class="fa-solid fa-square-xmark"></i></span>
+                </div>
+                <div id="buttonBox">
+                    <input type="submit" value="Get Started Now" id="signUp">
+                </div>
+                
+            </fieldset>
+        </form>
+        <p id="desclaimer">By clicking "Get Started Now", you agree to CoSchedule’s 
+            <span style="text-decoration: underline;">terms of service,
+                end user agreement, and privacy policy;</span>
+                 you are 16 years or older; and you
+            will receive information from CoSchedule from which you can opt out at any
+             time.</p>
+    </div>
 </body>
 </html>
+
+<script>
+    document.querySelector("#userName").addEventListener("input",signUpName);
+    function signUpName(){
+        event.preventDefault();
+        var name=document.querySelector("#userName").value;
+        if(name!=""){
+            document.querySelector("#nameSpan").setAttribute("class","fa-solid fa-check");
+            document.querySelector("#nameSpan").style.color="green";
+            document.querySelector("#nameInstruction").innerHTML="";
+        }
+        if(name==""){
+            document.querySelector("#nameSpan").setAttribute("class","fa-solid fa-square-xmark");
+            document.querySelector("#nameSpan").style.color="#ff9191";
+
+            var pTag=document.createElement("p");
+            pTag.innerText="Please enter your full name.";
+            pTag.setAttribute("class", "instructions");
+            document.querySelector("#nameInstruction").append(pTag);
+        }
+    }
+    
+    document.querySelector("#userEmail").addEventListener("input",signUpEmail);
+    function signUpEmail(){
+        event.preventDefault();
+        var name=document.querySelector("#userEmail").value;
+        if(name!=""){
+            document.querySelector("#emailSpan").setAttribute("class","fa-solid fa-check");
+            document.querySelector("#emailSpan").style.color="green";
+            document.querySelector("#emailInstruction").innerHTML="";
+        }
+        if(name==""){
+            document.querySelector("#emailSpan").setAttribute("class","fa-solid fa-square-xmark");
+            document.querySelector("#emailSpan").style.color="#ff9191";
+
+            var pTag=document.createElement("p");
+            pTag.innerText="Please enter a valid email address.";
+            pTag.setAttribute("class", "instructions");
+            document.querySelector("#emailInstruction").append(pTag);
+        }
+    }
+
+    document.querySelector("#userCompany").addEventListener("input",signUpCompany);
+    function signUpCompany(){
+        event.preventDefault();
+        var name=document.querySelector("#userCompany").value;
+        if(name!=""){
+            document.querySelector("#companySpan").setAttribute("class","fa-solid fa-check");
+            document.querySelector("#companySpan").style.color="green";
+            document.querySelector("#companyInstruction").innerHTML="";
+        }
+        if(name==""){
+            document.querySelector("#companySpan").setAttribute("class","fa-solid fa-square-xmark");
+            document.querySelector("#companySpan").style.color="#ff9191";
+
+            var pTag=document.createElement("p");
+            pTag.innerText="Please enter your Company name.";
+            pTag.setAttribute("class", "instructions");
+            document.querySelector("#companyInstruction").append(pTag);
+        }
+    }
+
+    document.querySelector("#userWebsite").addEventListener("input",signUpWebsite);
+    function signUpWebsite(){
+        event.preventDefault();
+        var name=document.querySelector("#userWebsite").value;
+        if(name!=""){
+            document.querySelector("#websiteSpan").setAttribute("class","fa-solid fa-check");
+            document.querySelector("#websiteSpan").style.color="green";
+            document.querySelector("#websiteInstruction").innerHTML="";
+        }
+        if(name==""){
+            document.querySelector("#websiteSpan").setAttribute("class","fa-solid fa-square-xmark");
+            document.querySelector("#websiteSpan").style.color="#ff9191";
+
+            var pTag=document.createElement("p");
+            pTag.innerText="Please enter a valid website URL.";
+            pTag.setAttribute("class", "instructions");
+            document.querySelector("#websiteInstruction").append(pTag);
+        }
+    }
+
+    document.querySelector("#userPassword").addEventListener("input",signUpPassword);
+    function signUpPassword(){
+        event.preventDefault();
+        var name=document.querySelector("#userPassword").value;
+        if(name.length>=8){
+            document.querySelector("#passwordSpan").setAttribute("class","fa-solid fa-check");
+            document.querySelector("#passwordSpan").style.color="green";
+        }
+        else{
+            document.querySelector("#passwordSpan").setAttribute("class","fa-solid fa-square-xmark");
+            document.querySelector("#passwordSpan").style.color="#ff9191";
+        }
+    }
+
+    var data=JSON.parse(localStorage.getItem("coScheduleData"))||[];
+
+    document.querySelector("form").addEventListener("submit", creatNewAccount);
+    function creatNewAccount(){
+        event.preventDefault();
+        var name=document.querySelector("#userName").value;
+        var email=document.querySelector("#userEmail").value;
+        var company=document.querySelector("#userCompany").value;
+        var website=document.querySelector("#userWebsite").value;
+        var password=document.querySelector("#userPassword").value;
+
+        var obj={
+                userName:name,
+                userEmail:email,
+                userCompany:company,
+                userWebsite:website,
+                userPassword:password
+        };
+        data.push(obj)
+        localStorage.setItem("coScheduleData",JSON.stringify(data));
+
+        document.querySelector("#userName").value="";
+        document.querySelector("#userEmail").value="";
+        document.querySelector("#userCompany").value="";
+        document.querySelector("#userWebsite").value="";
+        document.querySelector("#userPassword").value="";
+
+        alert("Account Has Been Created Successfully!!!");
+        window.location.href="index.html"
+    }
+</script>
