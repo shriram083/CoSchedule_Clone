@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
     <title>Sign In</title>
     <style>
         body{
@@ -75,6 +76,10 @@
             padding: 0px;
             color: #868686;
         }
+        a{
+            text-decoration: none;
+            color: #868686;
+        }
         p{
             color: #868686;
             font-size: 20px;
@@ -101,9 +106,35 @@
         </form>
 
         <div>
-            <p>Need an account? | Forgot your password?</p>
+            <p><a href="signUp.html">Need an account?</a> | Forgot your password?</p>
         </div>
         
     </div>
 </body>
 </html>
+
+<script>
+    var data=JSON.parse(localStorage.getItem("coScheduleData"))||[];
+    
+    document.querySelector("form").addEventListener("submit", checkLoginDetails);
+    function checkLoginDetails(){
+        event.preventDefault();
+        var email=document.querySelector("#email").value;
+        var password=document.querySelector("#password").value;
+        
+        var found=false;
+        for(var i=0;i<data.length;i++){
+            if(data[i].userEmail==email && data[i].userPassword==password){
+                found=true;
+                alert("Login Successful!!!");
+                window.location.href="index.html";
+            }
+        }
+        if(found==false){
+            alert("Invalid Email or Password");
+        }
+        document.querySelector("#email").value="";
+        document.querySelector("#password").value="";
+    }
+    console.log(data)
+</script>
