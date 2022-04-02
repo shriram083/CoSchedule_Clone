@@ -312,6 +312,10 @@ body{
       border-radius: 5px;
      margin: 0% 10% 0% 10%; 
     }
+    #csgsf:hover{
+        color: rgb(248,164,121);
+        background-color: rgb(255, 255, 255);
+    }
     .csl2pl{
         font-family: MuseoSans-700, sans-serif;
         color: rgb(255, 255, 255);
