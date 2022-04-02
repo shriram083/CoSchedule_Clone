@@ -1,0 +1,400 @@
+#container {
+    height:700px;
+    width:100%;
+    border:1px solid white;
+    background-color:#f48562;
+    margin-bottom: -150px;
+   
+  }
+  #container > button{
+      color:white;
+      border:none;
+      background-color:#ef7154;
+      font-size:20px;
+      padding:10px 15px 10px 20px;
+      height:6%;
+      width:200px;
+      margin:auto;
+     display:flex; 
+      
+  }
+  #container > button:hover{
+      background-color:hsl(11, 92%, 62%);
+      color:white;
+  }
+  #container > p{
+      text-align: center;
+      font-size: 60px;
+      color: white;
+      margin-top: 30px;
+  }
+  #container > h2{
+      text-align: center;
+      color: white;
+      margin-top: 20px;
+  }
+  #container > div{
+      font-size: 20px;
+      width:350px;
+      height:50px;
+      border:none;
+      text-align: center;
+      margin:auto;
+      margin-top: 200px;
+      color:white;
+      background-color:#ef7154;
+      display: flex;
+      align-items: center;
+      
+  }
+  
+  #cont > img{
+          height: 100%;
+          width:50px;
+          margin: 0px;
+  }
+  #cont > h2{
+          font-size: 20px;
+          margin-left: 20px;
+  }
+
+  #img1 > img {
+      height:500px;
+      width:80%;
+      display:block;
+      margin:auto;
+  }
+ 
+
+  /**************************container1**************************************************/
+  #container1 {
+    height:500px;
+    width:70%;
+    background-color:white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+    gap:20px;
+    padding: 10px;
+
+  }
+  #box1{
+     border:1px solid white;
+  }
+  #box1 > div{
+  
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:(2,100%);
+    padding: 20px;
+    height:200px;
+    width:90%;
+  }
+  #box1 > div >p{
+      color:black;
+       margin-top: 10px;
+       font-size: 20px;
+
+  }
+  #box2{
+      border:1px solid white;
+  }
+  #heading1 > h1{
+      text-align: center;
+      color:black;
+      margin-top: 40px;
+  }
+  #box2 >img{
+      height: 400px;
+      width: 400px;
+  }
+
+  /******************************************* container2 *****************************************/
+  #container2{
+    height:200px;
+    width:60%;
+    background-color:white;
+    text-align:center;
+    margin: auto;
+    margin-top:40px;
+  }
+
+   #container2 > p{
+      color:black;
+       margin-top: 20px;
+       font-size: 25px;
+   }
+   #container2 > h6{
+      
+       color:black;
+       margin-top: 20px;
+       font-size: 15px;
+   }
+
+   /*****************************container3 ************************************/
+
+    #container3{
+    height:200px;
+    width:60%;
+    background-color:#f48562;
+    text-align:center;
+    margin: auto;
+    margin-top:20px;
+  }
+  #container3 > p{
+      color:white;
+       padding: 15px 25px 15px 25px;
+       font-size: 25px;
+
+       
+  }
+  #container3 > h5{
+      color:white;
+      margin-bottom:40px;
+      font-size: 15px;
+  }
+  #container3 > button{
+      color:red;
+      border:1px solid red;
+      background-color:white;
+      font-size:20px;
+      padding:10px 15px 10px 20px;
+      height:25%;
+      width:200px;
+      margin:auto;
+     display:flex;
+  }
+  #container3 > button:hover{
+      background-color:white;
+      color:brown;
+  }
+ 
+  #heading2{
+      text-align: center;
+      color:black;
+      margin-top: 40px;
+  } 
+
+  /********************************container4 *************************************/
+  #container4{
+    height:400px;
+    width:70%;
+    background-color:white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+    gap:20px;
+    padding: 10px;
+  }
+  #boxA {
+      border:1px solid white;
+  }
+  #boxA > img{
+      height:400px;
+      width:120%;
+      display: block;
+      margin: auto;
+  }
+  #boxB {
+      border:1px solid white;
+  }
+  #boxB > p{
+      color:black;
+       margin-top: 10px;
+       font-size: 23px;
+       text-align: center;
+  } 
+  #boxB > h1{
+    color:black;
+     margin-top: 80px;
+     text-align: center;
+     font-size:40px ;
+}
+
+  /************************************** container5 **************************************/
+    #container5{
+    height:400px;
+    width:70%;
+    background-color:white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+    gap:20px;
+    padding: 10px;
+    }
+    #boxC{
+        border:1px solid white;
+    }
+    #boxC > p{
+      color:black;
+       margin-top: 10px;
+       font-size: 23px;
+       text-align: center;
+    }
+    #boxC > h1{
+        color:black;
+         margin-top: 80px;
+         font-size: 40px;
+         text-align: center;
+      }
+
+    #boxD{
+        border:1px solid white;
+    }
+    #boxD > img{
+      height:500px;
+      width:100%;
+      display: block;
+      margin: auto;
+  } 
+
+  /********************************** container6 *********************************/
+   #container6{
+    height:450px;
+    width:70%;
+    background-color:white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+    gap:20px;
+    padding:40px;
+  }
+  #boxE {
+      border:1px solid white;
+  }
+  #boxE > img{
+      height:450px;
+      width:100%;
+      display: block;
+      margin: auto;
+  }
+  #boxF {
+      border:1px solid white;
+  }
+  #boxF > p{
+      color:black;
+       margin-top: 10px;
+       font-size: 23px;
+       text-align: center; 
+  }
+  #boxF > h1{
+    color:black;
+     margin-top: 80px;
+     font-size: 40px;
+     text-align: center; 
+}
+  /******************************** container7 *******************************/
+  #container7{
+    height:400px;
+    width:70%;
+    background-color:white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:auto;
+    gap:20px;
+    padding:10px;
+    }
+    #boxG{
+        border:1px solid white;
+    }
+    #boxG > p{
+      color:black;
+       margin-top: 10px;
+       font-size: 23px;
+       text-align: center;
+    }
+    #boxG > h1{
+        color:black;
+         margin-top: 80px;
+         font-size: 40px;
+         text-align: center;
+      }
+
+    #boxH{
+        border:1px solid white;
+    }
+    #boxH > img{
+      height:400px;
+      width:120%;
+      display: block;
+      margin: auto;
+      
+  } 
+
+  /****************************** container8 ***************************/
+  #container8 {
+    height:400px;
+    width:70%;
+    margin: auto;
+    padding: 5px;
+    
+  }
+  #container8 > img{
+      height:400px;
+      width:100%;
+      display: block;
+      margin: auto; 
+       
+  }
+  /*************************** container9 ******************************/
+  #container9{
+    height:200px;
+    width:60%;
+    background-color:white;
+    text-align:center;
+    margin: auto;
+    margin-top:40px;
+  }
+
+   #container9 > p{
+      color:black;
+       margin-top: 20px;
+       font-size: 25px;
+   }
+   #container9 > h6{
+      
+       color:black;
+       margin-top: 20px;
+       font-size: 15px;
+   }
+
+  /*************************** container10 ************************/
+   #container10{
+    height:200px;
+    width:70%;
+    background-color:#f48562;
+    text-align:center;
+    margin: auto;
+  }
+  #container10 > h2{
+      color:white;
+       font-size: 25px;
+       margin-top: 60px;
+       margin: auto;
+       padding:20px 25px 20px 30px;
+  }
+  #container10 > p{
+      color:white;
+      font-size: 20px;
+      text-align: center;
+  }
+  #container10 > button{
+      color:#f48562;
+      border:1px solid red;
+      background-color:white;
+      font-size:20px;
+      padding:10px 15px 10px 20px;
+      height:20%;
+      width:200px;
+      margin:auto;
+     display:flex;
+  } 
+   #container10 > button:hover{
+      background-color:white;
+      color:palevioletred;
+  } 
